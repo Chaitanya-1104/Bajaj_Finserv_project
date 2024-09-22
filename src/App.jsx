@@ -8,7 +8,7 @@ function App() {
   const [responseData, setResponseData] = useState(null);
   const [selectedOptions, setSelectedOptions] = useState([]);
   const [errorMessage, setErrorMessage] = useState('');
-
+  
   // Function to validate and parse JSON input
   const handleJsonInput = (e) => {
     const input = e.target.value;
