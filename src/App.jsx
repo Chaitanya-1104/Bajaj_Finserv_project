@@ -30,7 +30,7 @@ function App() {
     if (isValidJson) {
       try {
         const parsedJson = JSON.parse(jsonInput);  // Parse the input before sending it
-        const response = await axios.post('http://localhost:3000/bfhl', parsedJson); // Adjust this URL to match your backend
+        const response = await axios.post('https://backend-qsub.onrender.com/bfhl', parsedJson); // Adjust this URL to match your backend
         setResponseData(response.data);
         setErrorMessage('');
       } catch (error) {
